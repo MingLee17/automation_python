@@ -1,0 +1,2 @@
+This project purpose is to automaticaly run the SQL script in data_check folder in order to check the numbers in database before updating the tables such as:
+- Check for dublipcate 
