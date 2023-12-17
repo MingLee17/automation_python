@@ -1,2 +1,9 @@
-This project purpose is to automaticaly run the SQL script in data_check folder in order to check the numbers in database before updating the tables such as:
-- Check for dublipcate 
+The purpose of this project is to automatically execute SQL scripts in the "data_check" folder to verify the numbers in the database before updating the tables. The checks include:
+
+Identifying duplicate rows: Utilizing COUNT and COUNT(DISTINCT) on the primary key (id) to compare the results. If both return the same value, it indicates no duplication.
+
+Monitoring low transactions: Examining the number of transactions each month. Months with transaction counts lower than 25% of the average are flagged as suspicious and require additional scrutiny before proceeding.
+
+Detecting missing data: Generating a timeline bar graph where each bar represents a month. If a bar deviates significantly from the usual pattern, that month needs thorough verification before updating the database.
+
+Once the current database is confirmed to be in good condition, SQL scripts in the "data_update" folder will be executed. This Python automation can significantly save time compared to manual checking and updating, which would take hours to run each schema individually.
