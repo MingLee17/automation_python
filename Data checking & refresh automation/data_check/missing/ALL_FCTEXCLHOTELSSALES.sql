@@ -1,0 +1,8 @@
+--------ALL_ALL_VENDTRANS--------
+---MISSING CHECK
+SELECT to_char(TIMEOFSALE,'YYYY-MM') trans_month, count(*) trans_count
+FROM COLES_CLEAN.LIQUORLAND_MERCH.ALL_FCTEXCLHOTELSSALES
+WHERE TIMEOFSALE >= '2021-01-01'
+GROUP BY trans_month
+ORDER BY trans_month;
+
