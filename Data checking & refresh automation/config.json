@@ -1,11 +1,11 @@
 { "snowflake" :
               {
-		        "account"   : "ih73640.australia-east.azure",
-                "user"  : "minhly@PROFECTUSGROUP.COM",
+		        "account"   : "account",
+                "user"  : "username@gmail.com",
                 "warehouse" : "W1",
-                "role"      : "PVN_AUDIT_LEADS",
-                "database"  : "COLES",
-                "schema"    : "STI_WIP_CS",
+                "role"      : "Data_Proccessor",
+                "database"  : "CS",
+                "schema"    : "CS_SCHEMA",
                 "password"  : "",
 		        "authenticator" : "externalbrowser"
               }
